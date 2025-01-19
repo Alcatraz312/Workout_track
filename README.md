@@ -70,13 +70,13 @@ fitness-tracking-app/
 ## Screenshots
 
 ### Home Page
-![Home Page Screenshot](static/screenshots/home_page.png)
+![Home Page Screenshot](Images/Home_page.png)
 
 ### Log Activity Page
-![Log Activity Page Screenshot](static/screenshots/log_activity.png)
+![Log Activity Page Screenshot](Images/Log_activity.png)
 
 ### View Progress Page
-![View Progress Page Screenshot](static/screenshots/view_progress.png)
+![View Progress Page Screenshot](Images/View_progress.png)
 
 ---
 
