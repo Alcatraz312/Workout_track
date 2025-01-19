@@ -53,7 +53,7 @@ A simple and interactive web-based fitness tracking application built using Flas
 ## Folder Structure
 
 ```
-fitness-tracking-app/
+fitness-tracking-web application/
 ├── static/
 │   └── style.css          # CSS for styling the app
 ├── templates/
