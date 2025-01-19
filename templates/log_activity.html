@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Activity</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracking App</h1>
+        <h2>By Taransh Rathore</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/progress">View Progress</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Log Your Activity</h1>
+        <form method="POST">
+            <label for="date">Date (YYYY-MM-DD):</label>
+            <input type="text" id="date" name="date" required>
+            
+            <label for="steps">Steps Walked:</label>
+            <input type="number" id="steps" name="steps" required>
+            
+            <label for="calories">Calories Burned:</label>
+            <input type="number" id="calories" name="calories" required>
+            
+            <label for="water">Water Intake (liters):</label>
+            <input type="number" id="water" name="water" step="0.1" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fitness Tracker</p>
+    </footer>
+</body>
+</html>

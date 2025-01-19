@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Progress</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracking App</h1>
+        <h2>By Taransh Rathore</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/log">Log Activity</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>View Your Progress</h1>
+        <form method="POST">
+            <label for="date">Enter Date (YYYY-MM-DD):</label>
+            <input type="text" id="date" name="date" required>
+            <button type="submit">View</button>
+        </form>
+        {% if progress %}
+            {% if progress == "No data available." or progress == "No data found for the specified date." %}
+                <p>{{ progress }}</p>
+            {% elif progress.type == 'all' %}
+                <h2>Overall Progress</h2>
+                <p>Total Steps: {{ progress.total_steps }}</p>
+                <p>Total Calories Burned: {{ progress.total_calories }}</p>
+                <p>Total Water Intake: {{ progress.total_water }} liters</p>
+            {% elif progress.type == 'date' %}
+                <h2>Progress for {{ progress.date }}</h2>
+                <p>Steps: {{ progress.steps }}</p>
+                <p>Calories Burned: {{ progress.calories }}</p>
+                <p>Water Intake: {{ progress.water }} liters</p>
+            {% endif %}
+        {% endif %}
+    </main>
+    <footer>
+        <p>&copy; 2025 Fitness Tracker</p>
+    </footer>
+</body>
+</html>
