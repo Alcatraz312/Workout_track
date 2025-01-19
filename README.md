@@ -1,4 +1,5 @@
-# Fitness Tracking App
+# Fitness Tracking web application
+
 
 A simple and interactive web-based fitness tracking application built using Flask. Users can log their daily activities such as steps walked, calories burned, and water intake, and view their progress over time.
 
